@@ -31,10 +31,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         self.enrollLabel.textColor = leadingConstraint.constant > 100 ? #colorLiteral(red: 0.2250072956, green: 0.6567959785, blue: 0.8611732125, alpha: 0.6980392157) : #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         
         if leadingConstraint.constant == 0 && !isControllerSet {
-            
-            
-           // usersTableViewController.fetchData()
-
+            usersTableViewController.fetchData()
         }
         
         isControllerSet = leadingConstraint.constant == 0

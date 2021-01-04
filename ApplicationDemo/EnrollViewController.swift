@@ -36,7 +36,6 @@ class EnrollViewController: UIViewController, UITextFieldDelegate, UIPickerViewD
         pickerView.delegate = self
         //pickerView.dataSource = self
         self.setBorderColor()
-        self.setTestData()
         self.setDelegates()
         setupTextFields()
         gender.inputView = pickerView
@@ -67,19 +66,7 @@ class EnrollViewController: UIViewController, UITextFieldDelegate, UIPickerViewD
         dateOfBirth.delegate = self
         phoneNumber.delegate = self
     }
-    
-    func setTestData() {
-        gender.text = "male"
-        firstName.text = "fsjklflkdfd"
-        lastName.text = "da"
-        state.text = "india"
-        country.text = "fsjk"
-        homeTown.text = "ssf"
-        telephoneNumber.text = "9876543210"
-        dateOfBirth.text = "09/02/97"
-        phoneNumber.text = "9876543210"
-        
-    }
+   
     
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
